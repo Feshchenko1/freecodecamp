@@ -1,123 +1,321 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>CatPhotoApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Land</title>
   </head>
   <body>
+    <header class="hero-section">
+      <div class="container">
+        <nav class="navbar">
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="logo">
+            <a href="#"><img src="logo" alt="logo" /></a>
+          </div>
+
+          <div class="social-media">
+            <a href="#"><img src="twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="linkedin.svg" alt="Linkedin" /></a>
+          </div>
+        </nav>
+
+        <div class="main-content">
+          <h1>The best products start with Figma</h1>
+          <h4>
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </h4>
+          <a href="#" class="btn-1">Try for free</a>
+        </div>
+      </div>
+      <img src="background-content" />
+    </header>
     <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <p>
-          Everyone loves
-          <a
-            href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
-            >cute cats</a
-          >
-          online!
-        </p>
-        <p>
-          See more
-          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
-          in our gallery.
-        </p>
-        <a href="https://freecatphotoapp.com"
-          ><img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-            alt="A cute orange cat lying on its back."
-        /></a>
+      <section class="features-section">
+        <div class="features-container-head">
+          <div class="features-content-text">
+            <h2>Features</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+
+          <div class="features-content-items">
+            <img src="style-1.svg" alt="icon" />
+            <h3>OpenType features Variable fonts</h3>
+            <p>
+              Slate helps you see how many more days you need to work to reach
+              your financial goal.
+            </p>
+            <img src="style-2.svg" alt="icon" />
+            <h3>Design with real data</h3>
+            <p>
+              Slate helps you see how many more days you need to work to reach
+              your financial goal.
+            </p>
+            <img src="style-3.svg" alt="icon" />
+            <h3>Fastest way to take action</h3>
+            <p>
+              Slate helps you see how many more days you need to work to reach
+              your financial goal.
+            </p>
+          </div>
+
+          <div class="features-content-video">
+            <video src="video.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+
+        <div class="features-content-main">
+          <div class="left-container">
+            <h2>Fastest way to organize</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+            <a href="btn-1"><strong>Try For Free</strong></a>
+          </div>
+          <div class="right-container"><img src="laptop" alt="laptop" /></div>
+        </div>
+
+        <div class="features-content-footer">
+          <div class="left-container"><img src="mail" alt="mail" /></div>
+          <div class="right-container">
+            <h3>At your fingertips</h3>
+            <h2>Lightning fast prototyping</h2>
+            <h3>Subscribe to our Newsletter</h3>
+            <p>Available exclusivery on Figmaland</p>
+            <input type="text" placeholder="Your Email" required />
+            <a href="#" class="btn-1">Submit</a>
+            <!-- <button type="submit">Submit</button> -->
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>catnip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-            alt="A slice of lasagna on a plate."
-          />
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-            alt="Five cats looking around a field."
-          />
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-        </figure>
+      <section class="partners-section">
+        <h2>Partners</h2>
+        <h4>
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </h4>
+        <img src="service-items.jpg" alt="service-items" />
       </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
-            <label
-              ><input
-                id="indoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="indoor"
-                checked
-              />
-              Indoor</label
-            >
-            <label
-              ><input
-                id="outdoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="outdoor"
-              />
-              Outdoor</label
-            >
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input
-              id="loving"
-              type="checkbox"
-              name="personality"
-              value="loving"
-              checked
-            />
-            <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy" />
-            <label for="lazy">Lazy</label>
-            <input
-              id="energetic"
-              type="checkbox"
-              name="personality"
-              value="energetic"
-            />
-            <label for="energetic">Energetic</label>
-          </fieldset>
-          <input
-            type="text"
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
+      <section class="testimonials-section">
+        <h2>Testimonials</h2>
+        <img src="ibm-logo.svg" alt="ibm-logo" />
+        <h4>
+          Most calendars are designed for teams. Slate is designed for
+          freelancers who want a simple way to plan their schedule.
+        </h4>
+        <img src="avatar.jpg" alt="avatar" />
+        <p>Organize across</p>
+        <p>Ui designer</p>
+
+        <a href="#" class="btn-1"><strong>More Testimonials</strong></a>
+      </section>
+      <section class="pricing-section">
+        <div class="pricing-content-text">
+          <h2>Pricing</h2>
+          <h4>
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </h4>
+        </div>
+        <div class="price-cards">
+          <div class="card-1">
+            <div class="card-heading">
+              <h3><strong>FREE</strong></h3>
+              <h6>Organize across all apps by hand</h6>
+            </div>
+            <div class="price-block">
+              <h1>0</h1>
+              <h3>$</h3>
+              <p>Per Month</p>
+            </div>
+            <div class="price-list">
+              <ul>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+            </div>
+            <a href="#" class="btn-1">Order Now</a>
+          </div>
+          <div class="card-2">
+            <div class="card-heading">
+              <h3><strong>STANDARD</strong></h3>
+              <h6>Organize across all apps by hand</h6>
+            </div>
+            <div class="price-block">
+              <h1>10</h1>
+              <h3>$</h3>
+              <p>Per Month</p>
+            </div>
+            <div class="price-list">
+              <ul>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+            </div>
+            <a href="#" class="btn-1">Order Now</a>
+          </div>
+          <div class="card-3">
+            <div class="card-heading">
+              <h3><strong>BUSINESS</strong></h3>
+              <h6>Organize across all apps by hand</h6>
+            </div>
+            <div class="price-block">
+              <h1>99</h1>
+              <h3>$</h3>
+              <p>Per Month</p>
+            </div>
+            <div class="price-list">
+              <ul>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+            </div>
+            <a href="#" class="btn-1">Order Now</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-heading">
+          <h2>Contact Us</h2>
+          <h4>
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </h4>
+        </div>
+        <div class="contact-container">
+          <form>
+            <h3>Contact Us</h3>
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Your Name" />
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-textarea"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="form-button btn">Send</button>
+            </div>
+          </form>
+          <div class="right-container-contact">
+            <div class="content-line-icons">
+              <div class="block-1">
+                <img src="map.svg" alt="icon" />
+                <h6>
+                  6386 Spring St undefined Anchorage, Georgia 12473 United
+                  States
+                </h6>
+              </div>
+              <div class="block-2">
+                <img src="phone.svg" alt="icon" />
+                <h6>(843) 555-0130</h6>
+              </div>
+              <div class="block-3">
+                <img src="mail.svg" alt="icon" />
+                <h6>willie.jennings@example.com</h6>
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                src="#"
+                class="map-iframe"
+                title="Map"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+
+            <div class="social-line">
+              <a href="#"><img src="twitter.svg" alt="Twitter" /></a>
+              <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+              <a href="#"><img src="linkedin.svg" alt="Linkedin" /></a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>
-        No Copyright -
-        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Pages</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Tomothy</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Eleanor Edwards</a></li>
+                        <li><a href="#">Ted Robertson</a></li>
+                        <li><a href="#">Annette Russell</a></li>
+                        <li><a href="#">Jennie Mckinney</a></li>
+                        <li><a href="#">Gloria Richards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Jane Black</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Philip Jones</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Colleen Russell</a></li>
+                        <li><a href="#">Marvin Hawkins</a></li>
+                        <li><a href="#">Bruce Simmmons</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-contact">
+                        <img src="map.svg" alt="Location" />
+                        <span>7480 Mockingbird Hill undefined</span>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <img src="phone.svg" alt="Phone" />
+                        <span>(239) 555-0108</span>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <img src="twitter.svg" alt="Twitter" />
+                        <img src="facebook.svg" alt="Facebook" />
+                        <img src="linkedin.svg" alt="LinkedIn" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
   </body>
 </html>
